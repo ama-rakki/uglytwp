@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Vue JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="firstscript.js"></script>
    <link rel="stylesheet" href ="ugly.css">
 <link rel="icon"  href="favicon_io/favicon.ico" type="image/x-icon">
 <meta charset="UTF-8">
@@ -8,6 +13,7 @@
 </head>
 
 <body>
+
 <h1>Survey Page</h1>
 <ul>
   <li><a href="index.html">Home</a></li>
@@ -18,12 +24,31 @@
   <li><a  href="aboutpage.html">About</a></li>
 </ul>
 
+<section id="app">
 <div class="container">
-<label for="newComment" name="newComment">Add a comment</label>
-<textarea id="newComment"></textarea>
-<button id="addComments">Add</button>
-<div id="allComments"></div>
+<div class="row">
+<div class="col-6">
+<div class="comment">
+<p v-for="items in item" v-text=""items></p>
+</div><!--End Comment-->
+</div><!--End col -->
+</div><!-- End row -->
+<div class="row">
+<div class="col-6">
+<textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+<button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+</section>
 
 </body>
 </html>
