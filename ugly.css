@@ -13,11 +13,11 @@ h2 {
   color:cyan
 }
 p {
-  color:sienna;
+  color:yellow;
   font-size: 17px;
 }
 img {
-  border: 13px solid orange;
+  border: 25px solid orange;
 }
 h3 {
   color:blue
@@ -33,7 +33,7 @@ ul {
   background-color:darkred
 }
 li {
-  float: left;
+  float:right;
   border-right: 1px solid;
 }
 li a {
