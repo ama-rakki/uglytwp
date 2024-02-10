@@ -23,32 +23,15 @@
     <li><a class="active" href="surveypage.html">Survey</a> </li>
   <li><a  href="aboutpage.html">About</a></li>
 </ul>
-
-<section id="app">
-<div class="container">
-<div class="row">
-<div class="col-6">
-<div class="comment">
-<p v-for="items in item" v-text=""items></p>
-</div><!--End Comment-->
-</div><!--End col -->
-</div><!-- End row -->
-<div class="row">
-<div class="col-6">
-<textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
-<button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-
-</section>
+<form action="submit-review.php" method="post"> 
+  <label for="name">Name:</label> 
+  <input type="text" id="name" name="name"><br> 
+  <label for="email">Email:</label> 
+  <input type="email" id="email" name="email"><br> 
+  <label for="review">Review:</label> 
+  <textarea id="review" name="review"></textarea><br> 
+  <input type="submit" value="Submit Review"> 
+</form> 
 
 </body>
 </html>
