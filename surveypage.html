@@ -2,158 +2,8 @@
 <html>
 
 <head>
-  <style>
-    * {
-      padding: 0;
-      box-sizing: border-box;
-      margin: 0;
-      font-family: "Gentium Plus", serif;
-    }
-
-    html {
-      font-size: 16px;
-      min-height: 100%;
-    }
-
-    body {
-      min-height: 100vh;
-      background: pink;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4.5px);
-      -webkit-backdrop-filter: blur(4.5px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-
-    .container {
-      width: min(90%, 1140px);
-      margin: 3rem auto;
-      
-    }
-
-    #allComments {
-      background-color: transparent;
-      border: none;
-      clear: left;
-      min-height: 0;
-      display: block;
-    }
-
-    .wrapper {
-      padding: 20px;
-      background-color: yellow;
-      /* border: 1px solid rgba(0, 0, 0, 0.3); */
-      border-radius: 0.5rem;
-      width: 70vw;
-      box-shadow: 0 0 50px rgb(0 0 0 / 10%);
-      margin: 20px;
-    }
-
-    .wrapper-child {
-      padding: 20px;
-      background-color: pink;
-      /* border: 1px solid rgba(0, 0, 0, 0.3); */
-      border-radius: 0.5rem;
-      width: 70vw;
-      box-shadow: 0 0 50px rgb(0 0 0 / 10%);
-      margin: 20px;
-    }
-
-    textarea {
-      background: transparent;
-      outline: none;
-      border: none;
-      resize: none;
-      background-color: blueviolet;
-      padding: 10px;
-      border-radius: 20px;
-      width: 50%;
-      padding: 15px;
-      margin-bottom: 17px;
-      box-sizing: border-box;
-      border: 1px solid lightgray;
-      font-size: 18px;
-      font-family: "Gentium Plus", serif;
-    }
-
-    #allComments:not(:first-child) {
-      margin-left: 3rem;
-      margin-top: 1rem;
-    }
-
-    #replyid {
-      left: 30px;
-      position: relative;
-      top: 10px;
-    }
-
-    #addComments {
-      position: relative;
-      top: -44px;
-      left: 25px;
-      height: 60px;
-      width: 160px;
-    }
-
-    .addReply,
-    .cancelReply {
-      position: relative;
-      top: -44px;
-      left: 2px;
-      height: 60px;
-      width: 150px;
-      margin: 5px;
-    }
-
-    .reply,
-    .likeComment,
-    .deleteComment,
-    .addReply,
-    .cancelReply,
-    #addComments {
-      opacity: 0.6;
-      cursor: pointer;
-      color: black;
-      text-decoration: none;
-      position: relative;
-      font-size: 20px;
-      background: orangered;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(18.5px);
-      -webkit-backdrop-filter: blur(18.5px);
-      border-radius: 10px;
-      border: none;
-      font-weight: bold;
-      color: #ffffff;
-      font-family: "Gentium Plus", serif;
-    }
-
-    .reply:hover,
-    .likeComment:hover,
-    .deleteComment:hover,
-    .addReply:hover,
-    .cancelReply:hover,
-    #addComments:hover {
-      border: 3px solid rgb(205 24 24 / 18%);
-    }
-
-    .reply,
-    .likeComment,
-    .deleteComment {
-      height: 40px;
-      width: 85px;
-      margin: 8px;
-      left: 20rem;
-    }
-
-    .text-content {
-      margin: 15px;
-      word-break: break-all;
-      text-align: left;
-      font-size: 20px;
-    }
-  </style>
-  <link rel="stylesheet" href="ugly.css">
+  
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -161,7 +11,7 @@
 
   <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
-  <title>Survey Page</title>
+  <title>Chat Page</title>
 </head>
 
 <body>
@@ -169,26 +19,19 @@
 
   <script src="firstscripts.js"></script>
 
-  <h1>Survey Page</h1>
+  <h1>Chat Page</h1>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="readingpage.html">Reading</a> </li>
     <li><a href="essaypage.html">Essay</a> </li>
     <li><a href="mappage.html">Map</a> </li>
-    <li><a class="active" href="surveypage.html">Survey</a> </li>
+    <li><a class="active" href="surveypage.html">Chat</a> </li>
     <li><a href="aboutpage.html">About</a></li>
   </ul>
+  
+  <iframe src="https://www3.cbox.ws/box/?boxid=3535502&boxtag=5tGhGa" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
 
-  <h1>Comment Section</h1>
-  <h2>leave a comment</h2>
-  <h3>comments are anonymous, but you can also sign your name if you like</h3>
-  <div class="container">
-    <textarea id="comment" placeholder="Type Here"></textarea>
-    <button id="addComments">Add Comments</button>
-    <div id="allComments"></div>
-  </div>
-
-  <script src="firstscript.js"></script>
+  
 
 </body>
 
