@@ -35,7 +35,6 @@ ul {
 }
 li {
   float: left;
-  boarder-right: 1px solid;
 }
 li a {
   display: block;
@@ -104,4 +103,10 @@ li.dropdown {
 }
 figcaption {
   color: palevioletred
+}
+.wrapper{
+  width:972px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
 }
